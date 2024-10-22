@@ -9,7 +9,7 @@ public class CalcRestMonth {
                 money = money + income - expense;
             } else {
                 System.out.println("Месяц " + month + ". Денег " + money + ". Буду отдыхать. Потратил " + -expense + ", затем ещё " + -((money - expense) * 2 / 3));
-                money = money - expense - (money - expense) * 2 / 3;
+                money = (money - expense) * 1 / 3;
                 count++;
             }
 
